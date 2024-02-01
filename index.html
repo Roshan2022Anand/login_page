@@ -3,25 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
 <body>
+    <h1>Login/Signup</h1>
     <form id="login-form" method="post">
-        <h1>Login/Signup</h1>
-        <fieldset>
+        <fieldset id="info">
             <label for="user-name">
-                NAME : <input type="text" id="user-name">
+                NAME : <input type="text" id="user-name" required>
             </label>
             <label for="user-email">
-                Email : <input type="email"  id="user-email">
+                Email : <input type="email"  id="user-email" required>
             </label>
             <label for="user-password">
-                Password : <input type="password" pattern="[0-5a-z]{8,10}" id="user-password">
+                Password : <input type="password" pattern="[0-5a-z]{8,10}" id="user-password" required>
             </label>
         </fieldset>
-        <label for="Signup">
-            <input type="button" value="SignUp" id="Signup">
-        </label>
+        <fieldset id="login-btn">
+            <label for="Signup">
+                <input type="submit" value="SignUp" id="Signup">
+            </label>
+            <a href="#">or login</a>
+
+        </fieldset>
     </form>
 </body>
 </html>
